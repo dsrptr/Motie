@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BB45B24F-44AC-4D95-A460-1C8DF86B70C2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Motie</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>838406884DE17FCDDDC125D9A91E02E6C3EA1EEF</key>
+		<string>github.com:dsrptr/Motie.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Motie.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>838406884DE17FCDDDC125D9A91E02E6C3EA1EEF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:dsrptr/Motie.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>838406884DE17FCDDDC125D9A91E02E6C3EA1EEF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>838406884DE17FCDDDC125D9A91E02E6C3EA1EEF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Motie</string>
+		</dict>
+	</array>
+</dict>
+</plist>

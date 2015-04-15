@@ -16,6 +16,7 @@
 //    NSDictionary *dict =[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"13517493217",@"123456",@"11112222",nil] forKeys:[NSArray arrayWithObjects:@"email",@"password",@"deviceId",nil]];
     NSLog(@"%@urlString:%@",dict,urlString);
     [JSONHTTPClient postJSONFromURLWithString:urlString params:dict completion:^(id object, JSONModelError *error) {
+        
          NSLog(@"object:%@error:%@",object,error);
         NSString *error1 =[object objectForKey:@"error_msg"];
         NSNumber *error_no = (NSNumber*)[object objectForKey:@"error_no"];

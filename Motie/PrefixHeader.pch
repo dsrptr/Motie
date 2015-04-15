@@ -34,6 +34,6 @@ typedef void (^doneWithObject)(id object);
 #define Mobile_Forget_Send_Code_URL [MainPrexURL stringByAppendingString:@"/accounts/mobile/forget"]
 //用户登录
 #define Login_URL [MainPrexURL stringByAppendingString:@"/accounts/login"]
-
-
+//获取单张数据
+#define Book_URL [MainPrexURL stringByAppendingString:@"/book"]
 

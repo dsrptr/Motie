@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface Index0ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *conten;
 
 @end

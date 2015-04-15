@@ -47,6 +47,8 @@
 		33700B201ADD177900460A9C /* yes.png in Resources */ = {isa = PBXBuildFile; fileRef = 33700B1E1ADD177900460A9C /* yes.png */; };
 		337F57C21ADE2EF00068DC25 /* Index0ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 337F57C11ADE2EF00068DC25 /* Index0ViewController.m */; };
 		337F57C41ADE2F1E0068DC25 /* Index0.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337F57C31ADE2F1E0068DC25 /* Index0.storyboard */; };
+		52BA38841ADE8FB90022A665 /* Index0Service.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BA38831ADE8FB90022A665 /* Index0Service.m */; };
+		52BA38871ADE99630022A665 /* RedData.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BA38861ADE99630022A665 /* RedData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +132,10 @@
 		337F57C01ADE2EF00068DC25 /* Index0ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Index0ViewController.h; sourceTree = "<group>"; };
 		337F57C11ADE2EF00068DC25 /* Index0ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Index0ViewController.m; sourceTree = "<group>"; };
 		337F57C31ADE2F1E0068DC25 /* Index0.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Index0.storyboard; sourceTree = "<group>"; };
+		52BA38821ADE8FB90022A665 /* Index0Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Index0Service.h; path = Service/Index0Service.h; sourceTree = "<group>"; };
+		52BA38831ADE8FB90022A665 /* Index0Service.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Index0Service.m; path = Service/Index0Service.m; sourceTree = "<group>"; };
+		52BA38851ADE99630022A665 /* RedData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedData.h; sourceTree = "<group>"; };
+		52BA38861ADE99630022A665 /* RedData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,10 +223,8 @@
 		33700AB81ADCB0DD00460A9C /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				33700AB91ADCB12200460A9C /* RegistService.h */,
-				33700ABA1ADCB12200460A9C /* RegistService.m */,
-				33700B151ADCE00D00460A9C /* LoginService.h */,
-				33700B161ADCE00D00460A9C /* LoginService.m */,
+				52BA38811ADE8F910022A665 /* Index0 */,
+				52BA38801ADE8F830022A665 /* User */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -329,6 +333,8 @@
 		33700AF81ADCBCB000460A9C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				52BA38851ADE99630022A665 /* RedData.h */,
+				52BA38861ADE99630022A665 /* RedData.m */,
 				33700AF51ADCBB3000460A9C /* Send_Code.h */,
 				33700AF61ADCBB3000460A9C /* Send_Code.m */,
 				33700B181ADCEAA000460A9C /* LoginModel.h */,
@@ -390,6 +396,26 @@
 				337F57C31ADE2F1E0068DC25 /* Index0.storyboard */,
 				337F57C01ADE2EF00068DC25 /* Index0ViewController.h */,
 				337F57C11ADE2EF00068DC25 /* Index0ViewController.m */,
+			);
+			name = Index0;
+			sourceTree = "<group>";
+		};
+		52BA38801ADE8F830022A665 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				33700AB91ADCB12200460A9C /* RegistService.h */,
+				33700ABA1ADCB12200460A9C /* RegistService.m */,
+				33700B151ADCE00D00460A9C /* LoginService.h */,
+				33700B161ADCE00D00460A9C /* LoginService.m */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		52BA38811ADE8F910022A665 /* Index0 */ = {
+			isa = PBXGroup;
+			children = (
+				52BA38821ADE8FB90022A665 /* Index0Service.h */,
+				52BA38831ADE8FB90022A665 /* Index0Service.m */,
 			);
 			name = Index0;
 			sourceTree = "<group>";
@@ -512,6 +538,7 @@
 				33700B031ADCC4AC00460A9C /* README.md in Sources */,
 				33700ACA1ADCB2C900460A9C /* ShareData.m in Sources */,
 				33700AF11ADCBB0A00460A9C /* JSONKeyMapper.m in Sources */,
+				52BA38871ADE99630022A665 /* RedData.m in Sources */,
 				33700B041ADCC4AC00460A9C /* SVIndefiniteAnimatedView.m in Sources */,
 				33700AE91ADCBB0A00460A9C /* JSONModel.m in Sources */,
 				33700AC11ADCB13700460A9C /* LoginViewController.m in Sources */,
@@ -523,6 +550,7 @@
 				33700A8E1ADCAA0600460A9C /* AppDelegate.m in Sources */,
 				33700AF01ADCBB0A00460A9C /* JSONModel+networking.m in Sources */,
 				33700AEC1ADCBB0A00460A9C /* JSONModelError.m in Sources */,
+				52BA38841ADE8FB90022A665 /* Index0Service.m in Sources */,
 				33700AEE1ADCBB0A00460A9C /* JSONAPI.m in Sources */,
 				33700AC41ADCB15200460A9C /* RegistSecondViewController.m in Sources */,
 				33700AF71ADCBB3000460A9C /* Send_Code.m in Sources */,

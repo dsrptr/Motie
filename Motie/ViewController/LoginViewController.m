@@ -36,13 +36,20 @@
 
 
 - (IBAction)login:(id)sender {
-    NSString *loginName =self.loginName.text;
-    NSString *password=self.password.text;
-    if (loginName.length<1||password.length<1) {
-        [SVProgressHUD showErrorWithStatus:@"账号或密码不能为空!"];
-    }else{
+    
+    
+    NSString *loginName =@"huangrong@motie.com";
+    NSString *password=@"Huro_2010";
+//    if (loginName.length<1||password.length<1) {
+//        [SVProgressHUD showErrorWithStatus:@"账号或密码不能为空!"];
+//    }else{
+    
         [loginService loginWith:loginName andPassword:password andDevice_id:sharedData.device_id inLoginViewController:self withDone:^(id object){
-            NSLog(@"%@",object);
+            
+            
+            sharedData.loginname=loginName;
+            sharedData.password=password;
+            
             NSDictionary *dict =[object objectForKey:@"data"];
             sharedData.icon=[dict objectForKey:@"dict"];
             sharedData.name=[dict objectForKey:@"name"];
@@ -54,7 +61,7 @@
             Index0ViewController *index0ViewController=[storBoard instantiateViewControllerWithIdentifier:@"Index0ViewController"];
             [self.navigationController pushViewController:index0ViewController animated:YES];
         }];
-    }
+//    }
    }
 
 - (IBAction)regist:(id)sender {
