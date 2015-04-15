@@ -1,0 +1,39 @@
+//
+//  PrefixHeader.pch
+//  Motie
+//
+//  Created by MartinLi on 15-4-14.
+//  Copyright (c) 2015年 Motie. All rights reserved.
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+#import "ShareData.h"
+#import "SVProgressHUD.h"
+typedef void (^doneWithObject)(id object);
+
+
+#define IP @"http://www.motie.com"
+#define MainPrexURL [NSString stringWithFormat:@"%@/android/1",IP]
+//发送验证码
+#define Send_Code_URL [MainPrexURL stringByAppendingString:@"/accounts/send_code"]
+//检查验证码 验证
+#define Check_Code_URL [MainPrexURL stringByAppendingString:@"/accounts/check_code"]
+//用户手机注册
+#define Mobile_Register_URL [MainPrexURL stringByAppendingString:@"/accounts/mobile/register"]
+//用户密码重置
+#define Resetpwd_URL [MainPrexURL stringByAppendingString:@"/accounts/resetpwd"]
+//用户密码重置发送验证码
+#define Mobile_Forget_Send_Code_URL [MainPrexURL stringByAppendingString:@"/accounts/mobile/forget"]
+//用户登录
+#define Login_URL [MainPrexURL stringByAppendingString:@"/accounts/login"]
+
+
+
